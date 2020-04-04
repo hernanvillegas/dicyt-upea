@@ -1,5 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { LoginComponent } from '../profile/login/login.component';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -9,16 +8,8 @@ import { LoginComponent } from '../profile/login/login.component';
 export class NavbarComponent implements OnInit {
 
   constructor() { }
-  isLogin: Boolean = false;
-
-  @ViewChild(LoginComponent)
-  loginComponent: LoginComponent;
 
   ngOnInit(): void {
   }
 
-  loginModal(){
-    this.loginComponent.openModal();
-
-  }
 }
