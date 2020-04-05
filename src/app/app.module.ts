@@ -13,6 +13,11 @@ import { PersonalComponent } from './components/dicyt/personal/personal.componen
 import { VicerrectoradoComponent } from './components/vicerrectorado/vicerrectorado.component';
 import { LoginComponent } from './components/profile/login/login.component';
 
+// MODULES
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +33,10 @@ import { LoginComponent } from './components/profile/login/login.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
