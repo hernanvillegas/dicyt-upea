@@ -13,7 +13,7 @@
                         <div class="col col-12">
                             <mat-form-field class="w-100">
                                 <mat-label>Nombre de Usuario</mat-label>
-                                <input matInput name="username" #username required id="username" placeholder="Ej. Hvillegas" [(ngModel)]="user.username" minlength="5" maxlength="10">
+                                <input matInput name="username" #username="ngModel" required id="username" placeholder="Ej. Hvillegas" [(ngModel)]="user.username" minlength="5" maxlength="10">
                                 <mat-error *ngIf="username.invalid && (username.dirty || username.touched)">
                                     Nombre de usuario incorrecto
                                 </mat-error>
@@ -24,8 +24,8 @@
                         <div class="col col-12">
                             <mat-form-field class="w-100">
                                 <mat-label>Enter your password</mat-label>
-                                <input matInput [type]="hide ? 'password' : 'text'" id="password" name="password" #password [(ngModel)]="user.password" required minlength="5" maxlength="12">
-                                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                <input matInput [type]="hide ? 'password' : 'text'" id="password" name="password" #password="ngModel" [(ngModel)]="user.password" required minlength="5" maxlength="12">
+                                <button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                                 <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                                 </button>
                                 <mat-error *ngIf="password.invalid && (password.dirty || password.touched)">
