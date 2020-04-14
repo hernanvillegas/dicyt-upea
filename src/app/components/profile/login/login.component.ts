@@ -16,7 +16,6 @@ export class LoginComponent implements OnInit {
   formLogin: NgForm;
 
   public user: UserInterface = {};
-
   public hide: boolean = true;
 
   ngOnInit(): void {

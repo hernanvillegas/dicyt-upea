@@ -34,8 +34,13 @@
                     <i class="fas fa-project-diagram"></i> Proyectos IDH
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#"><i class="fas fa-project-diagram"></i>proyectos</a>
+                    <a class="dropdown-item" routerLink="project/idh"><i class="fas fa-project-diagram"></i>proyectos</a>
                 </div>
+            </li>
+            <li class="nav-item" *ngIf="isLogin">
+                <a class="nav-link " role="button" routerLink="user/user-list" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user-plus"></i> New user
+                </a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

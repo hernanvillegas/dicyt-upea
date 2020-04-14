@@ -1,0 +1,28 @@
+<section id="project">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12 col-sm-6 col-md-4 col-lg-4" *ngFor="let project of projects">
+                <div class="card_project">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <p>
+                                <img class="img-fluid" src="https://dummyimage.com/300x300/000/fff" alt="">
+                            </p>
+                            <h4 routerLink="/details/project/{{project.project_code}}" class="card-title">{{project.project_name}} </h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur rerum pariatur aspernatur error quis rem cupiditate?
+                            </p>
+                            <h4>Responsables:</h4>
+                            <p>xxxx xxxxxxxxxxx xxxxxxxxx </p>
+                            <p>xxxx xxxxxxxxxxx xxxxxxxxx </p>
+                            <p>
+                                {{project.investment_amount}}---{{project.start_date}} - {{project.ending_date}}</p>
+
+                            <a href="" class="btn btn-block btn-primary" target="_blank">Buton</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,59 @@
+<div class="modal fade" id="registerModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-img">
+            <div class="bg-mask">
+                <div class="modal-header">
+                    <h2 class="h3 mb-1 font-weight-normal title">Registro de Usuarios</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <form #formLogin="ngForm">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <mat-form-field class="example-full-width">
+                                        <mat-label>tipo:</mat-label>
+                                        <input matInput name="type" required id="type" placeholder="Tipo de usuario" minlength="5" maxlength="10">
+                                        <!-- <div class="alert-danger">
+                                            <div class="container-error-message">
+                                                El nombre es requerido
+                                            </div>
+                                            <div class="container-error-message">
+                                                Necesita al menos 5 caracteres
+                                            </div>
+                                        </div> -->
+                                    </mat-form-field>
+                                </div>
+                                <div class="col">
+                                    <mat-form-field class="example-full-width">
+                                        <mat-label>Email:</mat-label>
+                                        <input matInput name="email" type="email" required id="email" placeholder="...@gmail.com" minlength="5" maxlength="100">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col">
+                                    <mat-form-field class="example-full-width">
+                                        <mat-label>Username:</mat-label>
+                                        <input matInput name="username" required id="username" placeholder="nombre de usuario" minlength="5" maxlength="10">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col">
+                                    <mat-form-field class="example-full-width">
+                                        <mat-label>Password:</mat-label>
+                                        <input matInput name="password" type="password" required id="password" placeholder="contraseña" minlength="5" maxlength="10">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-12 d-flex">
+                                <button type="submit" class="btn btn-primary btn-block">Aceptar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
